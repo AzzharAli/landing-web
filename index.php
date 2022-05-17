@@ -15,7 +15,7 @@
     <!-- Include API -->
     <?php include_once 'api.php'; ?>
 
-    <title>EULA.MY.ID</title>
+    <title>AHANG</title>
   </head>
   <body>
 
@@ -23,7 +23,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
   <div class="container">
-    <a class="navbar-brand" href="#">eula.my.id</a>
+    <a class="navbar-brand" href="#">AHANG</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -59,7 +59,7 @@
 
 
 <!-- Jumbotron -->
-<section class="jumbotron text-center">
+<section class="jumbotron text-center mb-3" style="padding-top: 2rem; padding-bottom: 2rem; background-color: #bfbfbf;">
     <img class="rounded-circle" src="imeg/i.png" alt="Me" width="200">
   <h1 class="display-4">AHANG</h1>
   <p class="lead">Unlock Character on 50.000 Subscriber</p>
@@ -118,7 +118,9 @@
       <div class="card-body">
         <h5 class="card-title"><?php echo $secondaryChannelName ?></h5>
         <p class="card-text"><?php echo $secondaryChannelSubscribe ?> Subscriber</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <p class="card-text"><small class="text-muted"><a class="text-dark" href="https://www.youtube.com/channel/UCutjtQpRYr3utArPja0sFKQ">Visit <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
+</svg></small></a></p>
       </div>
     </div>
   </div>
@@ -133,7 +135,39 @@
 <hr>
 <!-- end channel section -->
 
-<!-- Section -->
+<!-- Section Last Video -->
+
+
+<section class="youtube-recent">
+    <div class="container">
+        <div class="row">
+            <div class="col text-center mb-2">
+                <h2> Last Content </h2>
+            </div>
+        </div>
+        <div class="row">
+        <div class="col">
+        <div class="card mx-auto card-video-youtube">
+        <iframe class="card-img-top" width="720" height="720" src="https://www.youtube.com/embed/<?php echo $mainChannelLastVideoId ?>" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $mainChannelLastVideoTitle ?></h5>
+  <p class="card-text"><?php echo $mainChannelLastVideoDescription ?></p>
+
+  <div class="text-muted">
+    Diupload Pada <?php echo $tanggalUploadEmbed ?>
+  </div>
+  </div>
+</div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+
+  </section>
+
+<!-- End Last Video -->
 
 
 
@@ -142,7 +176,7 @@
 
 <!-- Footer -->
 
-<footer class="bg-dark text-white text-center fixed-bottom">
+<footer class="bg-dark text-white text-center mt-5 ">
     <p>Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
 </svg> by AHANG</p>

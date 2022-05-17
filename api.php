@@ -85,36 +85,41 @@ $splitAllDate = explode('-',$mainUploadDateOnly[0],3);
 $tahunUpload = $splitAllDate[0];
 $tanggalUpload = $splitAllDate[2];
 $bulanUpload = $splitAllDate[1];
+//$bulanUpload = 5;
 
+/*if($bulanUpload == 01){
+    $bulanUploadFix = "Januari";
+}if($bulanUpload == 02){
+    $bulanUploadFix = "Februari";
+}if($bulanUpload == 03){
+    $bulanUploadFix = "Maret";
+}if($bulanUpload == 04){
+    $bulanUploadFix = "April";
+}if($bulanUpload == 05){
+    $bulanUploadFix = "Mei";
+}if($bulanUpload == 06){
+    $bulanUploadFix = "Juni";
+}if($bulanUpload == 07){
+    $bulanUploadFix = "Juli";
+}if($bulanUpload == 08){
+    $bulanUploadFix = "Agustus";
+}if($bulanUpload == 09){
+    $bulanUploadFix = "September";
+}if($bulanUpload == 10){
+    $bulanUploadFix = "Oktober";
+}if($bulanUpload == 11){
+    $bulanUploadFix = "November";
+}if($bulanUpload == 12){
+    $bulanUploadFix = "Desember";
+}else{
+    $bulanUploadFix = "Sabit";
+}*/
 
-if($bulanUpload = "01"){$bulanUploadFix = "Januari";
-}
-if($bulanUpload = "02"){$bulanUploadFix = "Februari";
-}
-if($bulanUpload = "03"){$bulanUploadFix = "Maret";
-}
-if($bulanUpload = "04"){$bulanUploadFix = "April";
-}
-if($bulanUpload = "05"){$bulanUploadFix = "Mei";
-}
-if($bulanUpload = "06"){$bulanUploadFix = "Juni";
-}
-if($bulanUpload = "07"){$bulanUploadFix = "Juli";
-}
-if($bulanUpload = "08"){$bulanUploadFix = "Agustus";
-}
-if($bulanUpload = "09"){$bulanUploadFix = "September";
-}
-if($bulanUpload = "10"){$bulanUploadFix = "Oktober";
-}
-if($bulanUpload = "11"){$bulanUploadFix = "November";
-}
-if($bulanUpload = "12"){$bulanUploadFix = "Desember";
-}
-else
-{
-    $bulanUploadFix = "Unknown Month";
-};
+//$bulanUploadFix = date('F', mktime(0, 0, 0, $tanggalUpload, 12));
+
+$ketek = DateTime::createFromFormat('!m', $bulanUpload);
+$bulanUploadFix = $ketek->format('M');
+
 
 $tanggalUploadEmbed = $tanggalUpload ." " . $bulanUploadFix . " " . $tahunUpload;
 

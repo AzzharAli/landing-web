@@ -9,7 +9,7 @@ var_dump($mainUploadDateOnly);
 echo('<br>');
 var_dump($splitAllDate);
 echo('<br>');
-var_dump($bulanUpload);
+var_dump($bulanUpload . "  or  " . $bulanUploadFix);
 ?>
 
 <!doctype html>
