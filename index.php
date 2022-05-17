@@ -30,10 +30,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
         <a class="nav-link" href="http://eula.my.id/musik">Music Player</a>
-        <a class="nav-link" href="http://eula.my.id/kopikanan">Copyright Project</a>
-        <a class="nav-link" href="http://eula.my.id/stream">Stream</a>
-        <a class="nav-link" href="#">Shared Drive</a>
-        <a class="nav-link" href="http://eula.my.id/eulamywaifu">About</a>
+        <a class="nav-link" href="kopikanan">Copyright Project</a>
+        <a class="nav-link" href="https://drive.google.com/drive/folders/1x6oI0qJQ9m0hexUR5P-U4_LQBdJ726Du?usp=sharing">Off Vocal Free</a>
+        <a class="nav-link" href="abot">About me</a>
       </div>
 
       <div class="navbar-nav ms-auto">
@@ -151,23 +150,38 @@
         <iframe class="card-img-top" width="720" height="720" src="https://www.youtube.com/embed/<?php echo $mainChannelLastVideoId ?>" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <div class="card-body">
     <h5 class="card-title"><?php echo $mainChannelLastVideoTitle ?></h5>
-  <p class="card-text"><?php echo $mainChannelLastVideoDescription ?></p>
+
 
   <div class="text-muted">
     Diupload Pada <?php echo $tanggalUploadEmbed ?>
   </div>
   </div>
 </div>
-        </div>
+        </div>  
         </div>
     </div>
   </section>
 
-  <section>
+<!-- End Last Video -->
+<br><hr><br>
+<!-- Discord Section -->
 
+<section>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h2>Discord Server</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <iframe class="discord-embed" src="https://discord.com/widget?id=736148090486259743&theme=dark" width="720" height="480" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+      </div>
+    </div>
   </section>
 
-<!-- End Last Video -->
+<!-- end Discord Section -->
 
 
 
@@ -177,9 +191,7 @@
 <!-- Footer -->
 
 <footer class="bg-dark text-white text-center mt-5 ">
-    <p>Created with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-</svg> by AHANG</p>
+    <p>Created by AHANG</p>
 </footer>
 
 

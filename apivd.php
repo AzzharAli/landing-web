@@ -30,28 +30,18 @@ var_dump($bulanUpload . "  or  " . $bulanUploadFix);
   
   <!-- Test Section -->
 
-  <section class="youtube-recent">
-    <div class="container">
-        <div class="row">
-            <div class="col text-center mb-2">
-                <h2> Last Content </h2>
-            </div>
-        </div>
-        <div class="row">
+  <section>
+    <div class="container text-center">
+      <div class="row">
         <div class="col">
-        <div class="card mx-auto card-video-youtube">
-        <iframe class="card-img-top" width="720" height="720" src="https://www.youtube.com/embed/<?php echo $mainChannelLastVideoId ?>" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $mainChannelLastVideoTitle ?></h5>
-  <p class="card-text"><?php echo $mainChannelLastVideoDescription ?></p>
-
-  <div class="text-muted">
-    Diupload Pada <?php echo $tanggalUploadEmbed ?>
-  </div>
-  </div>
-</div>
+          <h2>Discord Server</h2>
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+        <iframe src="https://discord.com/widget?id=736148090486259743&theme=dark" width="720" height="480" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
+      </div>
     </div>
   </section>
 

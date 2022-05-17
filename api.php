@@ -46,7 +46,7 @@ $mainChannelProfilePicture = $mainChannelData['items'][0]['snippet']['thumbnails
 $secondaryChannelProfilePicture = $secondaryChannelData['items'][0]['snippet']['thumbnails']['default']['url'];
 
 
-//deskripsi
+//Subsciber
 $mainChannelSubscribe = $mainChannelData['items'][0]['statistics']['subscriberCount'];
 $secondaryChannelSubscribe = $secondaryChannelData['items'][0]['statistics']['subscriberCount'];
 
@@ -74,9 +74,6 @@ $mainChannelLastVideoId = $hasilContentDetail['items'][0]['contentDetails']['upl
 
 //Last Video Title
 $mainChannelLastVideoTitle = $hasilContentDetail['items'][0]['snippet']['title'];
-
-//Last Video Description
-$mainChannelLastVideoDescription = $hasilContentDetail['items'][0]['snippet']['description'];
 
 //Last Video Upload Date
 $mainChannelLastVideoUploadDate = $hasilContentDetail['items'][0]['snippet']['publishedAt'];
