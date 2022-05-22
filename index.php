@@ -1,3 +1,10 @@
+<?php
+//session_start();
+ 
+//if (!isset($_SESSION['username'])) {
+//    header("Location: /login.php");
+//}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,10 +36,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-        <a class="nav-link" href="http://eula.my.id/musik">Music Player</a>
-        <a class="nav-link" href="kopikanan">Copyright Project</a>
-        <a class="nav-link" href="https://drive.google.com/drive/folders/1x6oI0qJQ9m0hexUR5P-U4_LQBdJ726Du?usp=sharing">Off Vocal Free</a>
-        <a class="nav-link" href="abot">About me</a>
+        <a class="nav-link" href="musik">Music Player</a>
+        <a class="nav-link" href="kopikanan">Takedown Project</a>
+        <a class="nav-link" href="redirdrive.php">Off Vocal Free</a>
+        <a class="nav-link" href="abot.php">About</a>
       </div>
 
       <div class="navbar-nav ms-auto">
@@ -55,7 +62,7 @@
   </div>
 </nav>
 
-
+<!-- EULA WANGI NO DEBAT -->
 
 <!-- Jumbotron -->
 <section class="jumbotron text-center mb-3" style="padding-top: 2rem; padding-bottom: 2rem; background-color: #bfbfbf;">
@@ -117,7 +124,7 @@
       <div class="card-body">
         <h5 class="card-title"><?php echo $secondaryChannelName ?></h5>
         <p class="card-text"><?php echo $secondaryChannelSubscribe ?> Subscriber</p>
-        <p class="card-text"><small class="text-muted"><a class="text-dark" href="https://www.youtube.com/channel/UCutjtQpRYr3utArPja0sFKQ">Visit <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+        <p class="card-text"><small class="text-muted"><a class="text-dark" href="https://www.youtube.com/channel/UCI9F_k7LDS8Z1ruzm25rALw">Visit <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8zm-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5z"/>
 </svg></small></a></p>
       </div>
@@ -164,6 +171,68 @@
 
 <!-- End Last Video -->
 <br><hr><br>
+<!-- Section Penjelasan Fitur -->
+
+<section>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+      <h2> Penjelasan Fitur </h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <!-- accor -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        <h4>Musik Player</h4>
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><br>
+        <p> Musik Player adalah fitur untuk memutar lagu secara online dengan Playlist yaitu lagu yang ada di Channel Youtube Oyen Musik, untuk mengakses fitur ini anda diharuskan untuk membuat akun terlebih dahulu </p>
+        <img src="imeg/ss_musikplayer.png " alt="Screenshot Musik Player" style="width:100%;"><br><br>
+        <p> Fitur ini memungkinkan untuk pemutaran non stop selama internet lancar dan yang pasti anti iklan, file yang di load per lagu sekitar 10MB bisa lebih </p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        <h4>Takedown Project</h4>
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <a>Berisi Beberapa lagu yang ditakedown oleh pihak yang bersangkutan seperti ini</a><br><br><br>
+        <img src="imeg/ss_kopikanan.png" alt="Email Copyright" style="max-width: 100%;"><br><br><br>
+        <a>Jadi kalian para viewer tetap bisa mendengarkan hasil remix saya yang sudah kena Takedown, syaratnya harus bikin akun disini buat akses konten, kalo mau file MP3 bisa hubungi admin via Discord atau jika punya skill scraping bisa langsung ambil disini</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        <h4>Off Vocal Free</h4>
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <a> Berisi OFF Vocal atau bisa disebut karaoke dari musik yang diupload di Channel Oyen Musik, Akan tersedia di Google Drive </a>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- end accor -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><hr><br><br>
+
 <!-- Discord Section -->
 
 <section>
@@ -191,8 +260,8 @@
 <!-- Footer -->
 
 <footer class="bg-dark text-white text-center mt-5 ">
-    <p>Created by AHANG</p>
-</footer>
+    <p>Created by AHANG <a href="http://waifu.eula.my.id">Secret Web</a></p>
+</footer> 
 
 
 

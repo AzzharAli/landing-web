@@ -34,12 +34,12 @@ var_dump($bulanUpload . "  or  " . $bulanUploadFix);
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <h2>Discord Server</h2>
+          <h2>Tentang Website</h2>
         </div>
       </div>
       <div class="row">
         <div class="col">
-        <iframe src="https://discord.com/widget?id=736148090486259743&theme=dark" width="720" height="480" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          
         </div>
       </div>
     </div>
